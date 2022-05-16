@@ -1,3 +1,4 @@
+3;
 const score0El = document.querySelector("#score--0");
 const score1El = document.getElementById("score--1");
 const current0El = document.getElementById("current--0");
@@ -44,11 +45,11 @@ btnRoll.addEventListener("click", function () {
   if (playing) {
     //1. Genrating a random dice roll
     const dice = Math.trunc(Math.random() * 6) + 1;
-
+    console.log(dice);
     //2. Display dice
 
     diceEl.classList.remove("hidden");
-    diceEl.src = `images/dice-${dice}.png`;
+    diceEl.src = `images/Dice-${dice}.png`;
 
     //3. Check for rolled 1: if true
     if (dice !== 1) {
